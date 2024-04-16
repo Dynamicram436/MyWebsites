@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/images/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="index1.css">
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        @layer utilities{
+            .textshadow{
+                text-shadow: -3px 3px 0 red;
+                text-shadow: 20px 10px 5px greenyellow;
+            }
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+    'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+    'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+    'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+    'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+    '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
+  }
+}
+
+    </script>
+
+    
+</head>
+<body>
+    <div class="relative">
+    <div class="fixed top-0 left-0 right-0 flex p-15 relative items-center justify-between">
+        <img src="MB.png" alt="images" class="h-40 w-auto mt-50 mb-10 max-w-7xl">
+        
+    </div>
+
+<div class="fixed top-[40px] right-[100px] text-[40px] cursor-pointer">
+    <ion-icon class="fixed-[top-40px] right-[100px] text-[40px] cursor-pointer" name="menu-outline" onclick="Open(this)"></ion-icon>
+</div>
+<div class="fixed bg-[#002626] w-0 h-[100dvh] mb-40 text-white flex justify-center align-items-center text-[40px] tracking-[1px] overflow-hidden" id="hammm">
+    <ul>
+        <li class="hover:textshadow duration-500 hover:translate-y-[-5px]"><a href="#">Home</a></li>
+        <li class="hover:textshadow duration-500 hover:translate-y-[-5px]"><a href="/index5.html">Services</a></li>
+        <li class="hover:textshadow duration-500 hover:translate-y-[-5px]"><a href="/index4.html">About US</a></li>
+        <li class="hover:textshadow duration-500 hover:translate-y-[-5px]"><a href="/index3.html">Careers</a></li>
+        <li class="hover:textshadow duration-500 hover:translate-y-[-5px]"><a href="/index2.html">Contact Us</a></li>
+    </ul>
+    <div class="absolute top-[10px] right-[100px] text-[40px] cursor-pointer">
+        <ion-icon name="close-outline" onclick="Close(this)"></ion-icon>
+    </div>
+</div>
+
+
+<script>
+    let ham = document.getElementById('hammm')
+    function Open(){
+        ham.classList.add('w-[100%]')
+    }
+    function Close(){
+        ham.classList.remove('w-[100%]')
+    }
+</script>
+
+
+
+
+    <div class="pl-10 p-15 gap-x-10">
+        <h1 class=" sm:w-[-10px] h-[-10px] text-6xl font-thin leading-20 font-Graphik,sans-serif justify-between gap-x-10">ALL SERVICE<br><span class="my-2 text-5xl">DEVELOPMENT FORCE</span></h1>
+    </div>
+<br><br><br>
+    <div class="pl-10 mt-6">
+        <div class="relative col-span-1 w-full h-full flex justify-start">
+            <div class="h-full w-1 bg-black-300"></div>
+            <h1 class="text-3xl font-light mt-5">Unlock your business potential with our team of experts in business, design, and development.</h1>
+        </div>
+    </div>
+<br><br><br><br>
+
+        
+
+
+
+<section>
+    <div class="ms-px-25">
+        <h3 class="sm:text-5xl py-10 font-Graphik,sans-serif text-base font-semibold  mt-6 pl-20  ms-5 tracking-wide underline decoration-1 tracking-wide">ABOUT US</h3>
+    </div>
+    <br><br><br>
+    <div class="ms-px-25">
+        <p class=" sm:text-3xl leading-loose py- font-light  pl-20 ms-5 tracking-wide leading-relaxed h-24">MB IT Solutions is a Software solutions company that-strive to create result-driven digital experiences 
+            we help fast-growing startups and creative corporates with our innovative software solutions using cutting-edge 
+            technologies.
+    </p>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="ms-px-30 my-6 ">
+        <h2 class="text-3xl sm:text-left  lg:text-left py-50 lg:py-10  font-Graphik,sans-serif text-lg font-semibold pl-20 ms-10 tracking-wide underline decoration-1 tracking-wide text-3xl">Our Services</h2>
+    </div>
+    <br><br>
+    <h2 class="text-5xl pl-20 ms-5 tracking-wide leading-relaxed h-24">Development</h2>
+    <hr class="h-1 mx-20 mb-6 bg-gray-200 border-0 dark:bg-gray-600 w-64 gap-x-96 pl-20 tracking-wide">
+    <main>
+        <ul class="list-disc ml-24 mt-5 list-inside leading-loose">
+            <li>Websites</li>
+            <li>Sass</li>
+            <li>eCommerce</li>
+            <li>Web Apps</li>
+            <li>Custom Softwares</li>
+            <li>CMS</li>
+            <li>Mobile Apps</li>
+            <li>APIs</li>
+        </ul>
+    </main>
+
+    <br><br>
+    <h2 class="sm: text-4xl ms-5 py- font-semibold  pl-20 ms-5 tracking-wide leading-relaxed h-24 scroll-smooth-bg-blue-200">Cyber Security</h2>
+    <hr class="h-1 mx-20 mb-6 bg-gray-200 border-0 dark:bg-gray-600 w-64 gap-x-96 pl-20 tracking-wide">
+    <main>
+        <ul class="list-disc ml-24 mt-5 list-inside leading-8">
+            <li>Web vulnerablity Assesment and penetration testing</li>
+            <li>Andriod web vulnerablity Assesment and penetration testing</li>
+            <li>Ios Web vulnerablity Assesment and penetration testing</li>
+            <li>API web vulnerablity Assesment and penetration testing</li>
+            <li>Cloud web vulnerablity Assesment and penetration testing</li>
+        </ul>
+    </main>
+
+    <br><br>
+    <h2 class="sm: text-4xl ms-5 py- pl-20 ms-5 tracking-wide leading-relaxed h-24">Digital Marketing </h2>
+    <hr class="h-1 mx-20 mb-6 bg-gray-200 border-0 dark:bg-gray-600 w-64 gap-x-96 pl-20 tracking-wide">
+    <main>
+        <ul class="list-disc ml-24 mt-5 list-inside leading-8">
+            <li>Facebook Ads</li>
+            <li>Google Ads</li>
+            <li>What'sapp Marketing</li>
+            <li>Email marketing</li>
+            <li>Logo Design's</li>
+            <li>Brochure Design's</li>
+            <li>Google Tag's</li>
+            <li>Google Analytic's</li>
+            <li>AI Chatbot's</li>
+        </ul>
+    </main>   
+</section> 
+
+
+<br><br><br>
+
+<section class="sm:md-justify-center bg-purple-300 h-full w-full">
+    <h2 class="text-5xl text-white font-Graphik,sans-serif text-center italic underline mb-10 font-[Caveat]">What you can learn hear ? </h2>
+
+    
+<div class="flex flex-wrap justify-center gap-20  gap-x-8 gap-y-4 grid-cols-3">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-gray-700 mt-10 ml-24 min-w-40
+    transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-100 duration-300...">
+        
+            <img class="rounded-lg" src="digitalmarketing.jpg" alt="images" style="visibility: visible;" />
+        <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Digital Marketing</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-black-400 mt-5">Digital marketing is your trusted partner in digital marketing excellence. With a proven track 
+                record of driven results for businesses of all sizes, we specelize in delivering tailored strategies that elevate your online presence and maximize ROI.
+                From SEO and PPC to soical media managment and content marketing,
+                and drive conversions. Whether you're looking to increase brand awarness, generate leads, or boost sales, our comprehensive approach ensures that your digital 
+                marketing efforts deliver results. Final Coclusion is ----<sub>"Partner with us today and unlock the full potential of your presence."</sub>
+            </p>
+        </div>
+    </div>
+
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-gray-700 mt-10 ml-24 min-w-40
+        transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-100 duration-300 ...">
+        
+        <img class="rounded-t-lg" src="UiUx.jpg" alt="Images" style="visibility: visible;" />
+        <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700 mt-5">UI/UX</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-black-400">Ui/Ux, where exceptional user experience meets stunning design.Whether you're browsing on desktop or mobile, our initutive interface
+            guides your effortlessly through your journey. From clean layout to initutive navigation, we prioritize simplicity and clarity to enhance usability. With attention
+            to every pixels.Final Conclusion is --- <sub>"where UI/UX excellence elevates your online experience to new highlights."</sub>
+        </p>
+        
+        </div>
+        </div>
+
+
+
+<div class="flex flex-wrap justify-center gap-10">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-gray-700 mt-10 ml-24 min-w-40
+    transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-100 duration-300 ...">
+        
+        <img class="rounded-t-lg" src="cybersecurity.jpg" alt="images" style="visibility: visible;" />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Cyber Security</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-black-400 mt-5">Cyber Security, Safegaurding your digital assets and protecting your sensitive information is our top priority. With a 
+            team of expert professionals and cutting-edge technology, we offer solutions to defend against cyber threats and migrate risks. Whether you're a small business (or) large enterprise,
+            our main Aim is to protect from threats. Final Conclusion is --- <sub>"Partner with us to stay head of cyber threats and protect what matters most to your organization. Your security is our commitment."</sub>
+        </p>
+    </div>
+    </div>
+
+
+
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-gray-700 mt-10 ml-24 min-w-40
+    transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-100 duration-300 ...">
+        
+        <img class="rounded-t-lg" src="Appdevelopment.jpg" alt="images" style="visibility: visible;" />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">App Development</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-black-400 mt-5">App Development, From concepts to deployment, we guid you through evry step of the development process,
+            ensuring a seamless and initutive user experience, Whether your looking to build an Ios, Andriod, or cross-platform  app, we leverage the latest technologies and best pratices to bring your ideas to life.
+            With a focus on innovation , performance, and usability, we deliver apps that not only meet but exceed your experiences. Partner and make a impact on digital world.
+            Final Conclusion is --- <sub>"Explore the possibility, where app development meets excellence."</sub>
+        </p>
+        
+    </div>
+    </div>
+</div>
+
+
+<div class="flex flex-wrap justify-center gap-10">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-gray-700 mt-10 ml-24 min-w-40
+    transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-100 duration-300 ...">
+        
+        <img class="rounded-t-lg" src="webdevelopment.jpg" alt="images" style="visibility: visible;" />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Web Development</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-black-400 mt-5">Web Development, is your gateway to exceptional web development solutions.
+            Whether you're launching a new site or revampling an existing one,
+            From responsive design and intuitive navigation to seamless integration of
+            cutting-edge features, With a commitment to quality and innovation, we ensure that your website not only stands out in digital landscape but for your visitors.
+            Final Conclusion is ----<sub>Partner with us to elevate and unlock the full potential of website.</sub>
+        </p>
+        
+    </div>
+    </div>
+</div>
+
+
+<div class="flex flex-wrap justify-center gap-10">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-gray-700 mt-10 ml-24 min-w-40
+    transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-100 duration-300 ...">
+        
+        <img class="rounded-t-lg" src="Videoediting.jpg" alt="images" style="visibility: visible;" />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-700">Logo & Video Editing</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-black-400 mt-5">Video Editing, your one-stop destination for creative branding solutions 
+            and professional video editing services. here we learn video editing services create a content to new heights, 
+            to transform raw footage into polished, engagging videos that capture audiences. From basic editing to advanced effects and color grading, 
+            we ensure that every frame aligns with your brand identity with audiences.
+            Final Conclusion is ---<sub>Experience the power of video editing with Us.</sub>
+        </p>
+    
+    </div>
+    </div>
+</div>
+
+</section>
+
+<br><br><br>
+
+<section>
+        <h3 class="tracking-wide font-Graphik,sans-serif font-medium text-2xl font-light underline mx-20 my-10 mt-5">ENGAGEMENT MODELS</h3>
+        
+        <p class="text-5xl font-thin leading-loose font-Graphik,sans-serif my-10 mt-5 mx-20">Start from scratch, or grow your team ?<br>You choose, We assure</p>
+        
+        <p class="text-3xl font-light mt-5 my-10 mx-20 leading-[3rem]" style="width: 80%;">We Offer two models: You can hire team our team for your product, project or use our experts 
+            on going basis, in both cases, our development work as part of your team, whether that means daily standups, stratergy sessions, code reviews, retrospectives
+            or spontaneous chats.
+        </p>
+    </div>
+    
+    <div class="w-1/2 mt-5">
+        <h3 class="tracking-wide font-Graphik,sans-serif font-medium text-3xl font-light underline my-10 mx-20">Team as a Service</h3>
+        
+        <p class="text-3xl font-light my-10 mt-5 mx-20 leading-[3rem]" style="width: 80%">Our dedicated teams totally focus on u.we help define your 
+            goals and priovide suggestion for team augmentation for your organization.We assemble an engineering team best suited to your desire skill set, designed to be blend flawlessly with your current team.
+        </p>
+        
+        <h3 class="tracking-wide font-Graphik,sans-serif font-medium text-3xl font-light underline my-10 mx-20" style="width: 80%">Project-Based Engagement</h3>
+        
+        <p class="text-3xl font-light mt-5 my-10 mx-20 leading-[3rem]" style="width: 80%">Our teams take care of everything, leaving you to the focus on the matters: 
+            Comapany growth.
+            Not only we can develop your project from scratch, but we excel at business anaylysis, technical document, prototyping, design software 
+            development, and quality assurance --- all while optimizing the cost, time framer and scope of the work.
+        </p>
+    </div>
+</section>
+</div>
+
+<br><br><br><br><br>
+<section class="bg-blue-500 text-white h-full font-Graphik,sans-serif" id="section5">
+    <h1 class="text-5xl ">Let's Talk But You First :</h1>
+<br><br><br>
+
+    <p class="mx-20 text-2xl text-white-300 underline">You can also write us on Email.</p>
+    <address class="mx-20 mt-5 text-2xl">
+        <a href="mailto:webmaster@example.com">m@maawaabroitsolutions.com</a>
+        <br><br><br>
+        Visit us at:<br>
+        5/4,  near Park, Sali Pet, Arundalpet, 
+        Guntur, Andhra Pradesh 522002.
+        </address>
+<br><br>
+
+
+<form class="max-w-sm mx-auto">
+    <div class="mb-5">
+    <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
+    <input type="text" id="first-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="John" required />
+    </div>
+    <div class="mb-5">
+    <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
+    <input type="text" id="last-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Doe" required />
+    </div>
+    <div class="mb-5">
+      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+      <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+    </div>
+    <div class="mb-5">
+      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+      <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+    </div>
+    <div class="mb-5">
+      <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
+      <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
+    </div>
+    <div class="flex items-start mb-5">
+      <div class="flex items-center h-5">
+        <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+      </div>
+      <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+    </div>
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
+  </form>
+  
+</section>
+
+
+<section class="flex items-end">
+    <div class="">
+        <img src="MB.png" alt="images" class="h-40 w-auto mt-50 mb-10 max-w-7xl sm:w-auto mr-24">
+        <br>
+        <p class="text-gray-400">Copyright &copy; Maawaabro It Solutions Rights Reserved</p>
+    </div>
+
+    <ul class="flex-wrap mx-auto text-center h-15 mt-40 mb-10 ml-40 leading-[20px] sm:w-32 px-5">
+        <li>Services</li>
+        <br><br>
+        <li>About</li>
+        <br><br>
+        <li>Work</li>
+        <br><br>
+        <li>Contact</li>
+    </ul>
+    
+    <div class="flex mx-auto text-center mt-50 mb-10 mr-60 leading-[20px]">
+        <ul class="flex items-center">
+            <li>Terms</li>
+            <li class="ms-5">Privacy</li>
+        </ul>
+        <ul class="flex items-center ms-5 text-2xl gap-x-5">
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+        <ul class="flex items-center ms-3 gap-x-5 text-2xl">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        </ul>
+    </div>
+    
+</section>
+</body>
+</html>
